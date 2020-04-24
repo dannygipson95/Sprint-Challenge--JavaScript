@@ -34,7 +34,7 @@ A callback is a function that is used within a higher order function as a parame
 
 3. What is closure?
 
-
+When a function is enclosed with variables that are in it's lexical environment, and thus has access to them when the inner function is returned.
 
 4. Describe the four rules of the 'this' keyword.
 
