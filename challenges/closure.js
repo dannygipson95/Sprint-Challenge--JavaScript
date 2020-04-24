@@ -18,7 +18,20 @@ myFunction();
 
 // Explanation: 
 
+// The internal function is in the nestedFunction's lexical sope. The outer function myFunction's scope is accessible to the nestedFunction
 
 /* Task 2: Counter */
 
 /* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+
+function sumation(num){
+  let counter = num;
+  
+  function add(){
+    return (Math.pow(counter, 2) + counter)/2;
+  }
+ return add()
+}
+
+console.log(sumation(4));
